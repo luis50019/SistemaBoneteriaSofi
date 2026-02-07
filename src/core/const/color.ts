@@ -1,0 +1,9 @@
+export const COLORS = {
+    PRIMARY: '#E91E63',
+    SECONDARY: '#FFFFFF',
+    BG_PRIMARY: '#FFFFFF',
+    BG_CARD: '#FCE4EC',
+    TEXT_PRIMARY: '#212121',
+    TEXT_DARK:"#181114",
+    ALERTS: '#FF9800',
+}
