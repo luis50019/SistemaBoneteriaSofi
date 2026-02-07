@@ -4,7 +4,6 @@ export const styleHeader = StyleSheet.create({
    header: {
     flexDirection: "row",
     alignItems: "center",
-    paddingTop: 48,
     paddingHorizontal: 16,
     paddingBottom: 16,
     borderBottomWidth: 1,

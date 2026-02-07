@@ -5,5 +5,6 @@ export const COLORS = {
     BG_CARD: '#FCE4EC',
     TEXT_PRIMARY: '#212121',
     TEXT_DARK:"#181114",
+    BG_DARK:"#181114",
     ALERTS: '#FF9800',
 }
