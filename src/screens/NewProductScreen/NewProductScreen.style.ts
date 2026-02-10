@@ -10,69 +10,11 @@ export const stylesNewProductScreen = StyleSheet.create({
     flex: 1,
     backgroundColor: "#FFF",
   },
-
-  header: {
-    flexDirection: "row",
-    alignItems: "center",
-    padding: 16,
-    paddingTop: 40,
-    borderBottomWidth: 1,
-    borderBottomColor: "#F8BBD0",
-    backgroundColor: "rgba(255,255,255,0.95)",
-  },
-
-  backButton: {
-    width: 48,
-    height: 48,
-    borderRadius: 16,
-    backgroundColor: COLORS.secondary,
-    justifyContent: "center",
-    alignItems: "center",
-    marginRight: 12,
-  },
-
-  headerSubtitle: {
-    fontSize: 10,
-    fontWeight: "700",
-    color: COLORS.primary,
-    letterSpacing: 1,
-    textTransform: "uppercase",
-  },
-
-  headerTitle: {
-    fontSize: 20,
-    fontWeight: "900",
-  },
-
   content: {
     padding: 16,
     paddingBottom: 140,
   },
 
-  imageContainer: {
-    height: 300,
-    borderRadius: 40,
-    overflow: "hidden",
-    backgroundColor: "#EEE",
-    marginBottom: 24,
-  },
-
-  image: {
-    width: "100%",
-    height: "100%",
-  },
-
-  cameraButton: {
-    position: "absolute",
-    bottom: 16,
-    right: 16,
-    width: 56,
-    height: 56,
-    borderRadius: 16,
-    backgroundColor: COLORS.primary,
-    justifyContent: "center",
-    alignItems: "center",
-  },
 
   section: {
     gap: 16,
@@ -192,29 +134,4 @@ export const stylesNewProductScreen = StyleSheet.create({
     textTransform: "uppercase",
   },
 
-  footer: {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    padding: 16,
-    backgroundColor: "#FFF",
-  },
-
-  saveButton: {
-    height: 72,
-    borderRadius: 28,
-    backgroundColor: COLORS.primary,
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: 12,
-  },
-
-  saveText: {
-    fontSize: 18,
-    fontWeight: "900",
-    color: "#FFF",
-    textTransform: "uppercase",
-  },
 });

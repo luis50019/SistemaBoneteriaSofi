@@ -7,4 +7,5 @@ export const COLORS = {
     TEXT_DARK:"#181114",
     BG_DARK:"#181114",
     ALERTS: '#FF9800',
+    SUCCESFUL: '#2E7D32',
 }

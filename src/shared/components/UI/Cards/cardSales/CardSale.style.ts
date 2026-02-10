@@ -1,27 +1,7 @@
 import { StyleSheet } from "react-native";
+import { COLORS } from "../../../../../core/const/color";
 
-const COLORS = {
-  primary: "#FF2D78",
-  primaryDark: "#D4145A",
-  bg: "#F9FAFB",
-  dark: "#0F172A",
-};
-
-export const stylesSalesScreen = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: COLORS.bg,
-  },
-  /* CONTENT */
-  content: {
-    backgroundColor: "#fff",
-    borderTopLeftRadius: 40,
-    borderTopRightRadius: 40,
-    paddingHorizontal: 16,
-    paddingTop: 24,
-    marginTop: 12,
-  },
-
+export const styleCardSales = StyleSheet.create({
   saleItem: {
     flexDirection: "row",
     alignItems: "center",
@@ -39,7 +19,11 @@ export const stylesSalesScreen = StyleSheet.create({
     alignItems: "center",
     gap: 16,
   },
-
+  amountRow: {
+    flexDirection: "row",
+    alignItems: "baseline",
+    gap: 4,
+  },
   timeCircle: {
     width: 56,
     height: 56,
@@ -50,21 +34,17 @@ export const stylesSalesScreen = StyleSheet.create({
     borderWidth: 1,
     borderColor: "rgba(255,45,120,0.3)",
   },
-  amountRow: {
-    flexDirection: "row",
-    alignItems: "baseline",
-    gap: 4,
-  },
+
   time: {
     fontSize: 12,
     fontWeight: "900",
-    color: COLORS.primary,
+    color: COLORS.PRIMARY,
   },
 
   period: {
     fontSize: 9,
     fontWeight: "800",
-    color: COLORS.primary,
+    color: COLORS.PRIMARY,
   },
 
   saleAmount: {
@@ -111,5 +91,4 @@ export const stylesSalesScreen = StyleSheet.create({
     letterSpacing: 2,
     color: "#94A3B8",
   },
-
-});
+})
