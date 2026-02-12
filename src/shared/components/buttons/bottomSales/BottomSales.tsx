@@ -8,7 +8,7 @@ function BottomSales() {
         </TouchableOpacity>
 
         <TouchableOpacity style={styleBottomSales.newSaleBtn}>
-          <Text style={styleBottomSales.newSaleText}>NUEVA VENTA</Text>
+          <Text style={styleBottomSales.newSaleText}>Iniciar Ventas</Text>
           <Ionicons name="cart" size={22} color="#fff" />
         </TouchableOpacity>
       </View> );

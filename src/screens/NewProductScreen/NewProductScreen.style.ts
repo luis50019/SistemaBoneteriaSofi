@@ -11,11 +11,13 @@ export const stylesNewProductScreen = StyleSheet.create({
     backgroundColor: "#FFF",
   },
   content: {
-    padding: 16,
+    display: "flex",
+    flexDirection: "column",
+    padding: 5,
+    gap: 16,
     paddingBottom: 140,
+    
   },
-
-
   section: {
     gap: 16,
   },
