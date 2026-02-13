@@ -1,15 +1,26 @@
 import { Text, TouchableOpacity, View } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import { MaterialIcons  } from "@expo/vector-icons";
 import { styleBottomSales } from "./BottomSales.style";
-function BottomSales() {
+import { useNavigate } from "../../../hooks/useNavigate";
+
+interface BottomSalesProps {
+  to:string;
+  nameIcon:string;
+  iconButtom:string;
+  title:string;
+}
+
+function BottomSales({ to, nameIcon, title,iconButtom }: BottomSalesProps) {
+  const {navigationToPath} = useNavigate();
+
   return ( <View style={styleBottomSales.bottomBar}>
         <TouchableOpacity style={styleBottomSales.printBtn}>
-          <Ionicons name="print-outline" size={26} color="#64748B" />
+          <MaterialIcons  name={nameIcon} size={26} color="#64748B" />
         </TouchableOpacity>
 
-        <TouchableOpacity style={styleBottomSales.newSaleBtn}>
-          <Text style={styleBottomSales.newSaleText}>Iniciar Ventas</Text>
-          <Ionicons name="cart" size={22} color="#fff" />
+        <TouchableOpacity onPress={()=>navigationToPath(to) }style={styleBottomSales.newSaleBtn}>
+          <Text style={styleBottomSales.newSaleText}>{title}</Text>
+          <MaterialIcons  name={iconButtom} size={22} color="#fff" />
         </TouchableOpacity>
       </View> );
 }

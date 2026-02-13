@@ -25,7 +25,7 @@ export default function SalesHistoryScreen() {
           description="5 Camisetas, 10 Calcetines"
         />
       </ScrollView>
-      <BottomSales />
+      <BottomSales iconButtom="shopping-cart" nameIcon="print" title="Nueva Venta" to="QuickSale"/>
     </View>
   );
 }

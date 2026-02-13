@@ -4,6 +4,7 @@ import InventoryScreen from "../../screens/InventoryScreen/InventoryScreen";
 import MainLayout from "../mainLayout/MainLayout";
 import SalesHistoryScreen from "../../screens/SalesScreen/SalesHistoryScreen";
 import NewProductoScreen from "../../screens/NewProductScreen/NewProductScreen";
+import QuickSaleScreen from "../../screens/QuickSaleScreen/QuickSaleScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,7 @@ function InventaryStack() {
       <Stack.Screen name={'Inventary'} component={InventoryScreen} />
       <Stack.Screen name={'Sales'} component={SalesHistoryScreen} />
       <Stack.Screen name={'AddProduct'} component={NewProductoScreen} />
+      <Stack.Screen name={'QuickSale'} component={QuickSaleScreen} />
     </Stack.Navigator>
   </MainLayout>);
 }

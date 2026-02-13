@@ -6,10 +6,10 @@ function Categories() {
     <>
       <Text style={styleCategories.label}>Categoría</Text>
       <View style={styleCategories.grid}>
-        <CategoryButton icon="checkroom" text="Calcetín" active />
-        <CategoryButton icon="style" text="Bóxer" active={false} />
-        <CategoryButton icon="apparel" text="Ropa Interior" active={false} />
-        <CategoryButton icon="add" text="Nueva" dashed active={false} />
+        <CategoryButton icon="checkroom" categoryText="Calcetín" active />
+        <CategoryButton icon="style" categoryText="Bóxer" active={false} />
+        <CategoryButton icon="apparel" categoryText="Ropa Interior" active={false} />
+        <CategoryButton icon="add" categoryText="Nueva" dashed active={false} />
       </View>
     </>);
 }

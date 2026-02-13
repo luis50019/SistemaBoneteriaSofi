@@ -4,12 +4,12 @@ import { MaterialIcons } from "@expo/vector-icons";
 
 interface CategoryButtonProps {
   icon: string;
-  text: string;
+  categoryText: string;
   active: boolean;
   dashed?: boolean;
 }
 
-export default function CategoryButton({ icon, text, active, dashed }:CategoryButtonProps) {
+export default function CategoryButton({ icon, categoryText, active, dashed }:CategoryButtonProps) {
   return (
     <TouchableOpacity
       style={[
@@ -24,7 +24,7 @@ export default function CategoryButton({ icon, text, active, dashed }:CategoryBu
         color={active ? "#FFF" : "#555"}
       />
       <Text style={[stylesNewProductScreen.categoryText, active && { color: "#FFF" }]}>
-        {text}
+        {categoryText}
       </Text>
     </TouchableOpacity>
   );
