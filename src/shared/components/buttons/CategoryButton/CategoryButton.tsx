@@ -3,10 +3,6 @@ import { stylesNewProductScreen } from "../../../../screens/NewProductScreen/New
 import { MaterialIcons } from "@expo/vector-icons";
 type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
 
-type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
-
-type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
-
 interface CategoryButtonProps {
   icon: MaterialIconName;
   categoryText: string;
