@@ -5,6 +5,8 @@ type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
 
 type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
 
+type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
+
 interface CategoryButtonProps {
   icon: MaterialIconName;
   categoryText: string;

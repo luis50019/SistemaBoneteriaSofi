@@ -6,6 +6,8 @@ type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
 
 type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
 
+type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
+
 interface PropsInputIcon {
   nameIcon: MaterialIconName;
   placeholder: string;
