@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 function ScreenWithLayout({ children }: { children: React.ReactNode }) {
   return <MainLayout>{children}</MainLayout>;
 }
-
+  
 function InventaryStack() {
   return (
     <Stack.Navigator
