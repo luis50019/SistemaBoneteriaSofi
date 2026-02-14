@@ -2,6 +2,7 @@ import { TextInput, View } from "react-native";
 import { stylesInputIcon } from "./InputIcon.style";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Control, Controller } from "react-hook-form";
+type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
 
 type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
 

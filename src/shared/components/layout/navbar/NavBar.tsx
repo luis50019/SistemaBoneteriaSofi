@@ -42,6 +42,7 @@ function NavBar() {
       ))}
     </View>
   );
+
 }
 
 export default NavBar;

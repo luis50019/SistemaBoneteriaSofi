@@ -5,6 +5,7 @@ import { Session, User } from "@supabase/supabase-js";
 interface AuthState {
   session: Session | null;
   user: User | null;
+  profile: any | null;
 
   setSession: (session: Session, user: User) => void;
   logout: () => void;
