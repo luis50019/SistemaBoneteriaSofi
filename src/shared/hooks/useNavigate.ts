@@ -4,35 +4,31 @@ import type { RootStackParamList } from "../../app/navigations/types";
 
 type AppNavigation = NativeStackNavigationProp<RootStackParamList>;
 
+type RouteName = keyof RootStackParamList;
+
 export const useNavigate = () => {
   const navigation = useNavigation<AppNavigation>();
 
-  const navigationTo = <T extends keyof RootStackParamList>(
-    destination: T,
-    params?: RootStackParamList[T]
-  ) => {
-    navigation.navigate(destination, params);
+  const navigationTo = (destination: RouteName) => {
+    navigation.navigate(destination);
   };
 
-  const navigationToPath = <T extends keyof RootStackParamList>(
-    destination: T,
-    params?: RootStackParamList[T]
-  ) => {
-    navigation.push(destination, params);
+  const navigationToPath = (destination: RouteName) => {
+    navigation.push(destination);
   };
 
-  // úsalo solo cuando quieras reset real (ej. logout/login)
-  const resetTo = <T extends keyof RootStackParamList>(
-    destination: T,
-    params?: RootStackParamList[T]
-  ) => {
+  const resetTo = (destination: RouteName) => {
     navigation.dispatch(
       CommonActions.reset({
         index: 0,
-        routes: [{ name: destination, params }],
+        routes: [{ name: destination }],
       })
     );
   };
 
-  return { navigationTo, navigationToPath, resetTo };
+  return {
+    navigationTo,
+    navigationToPath,
+    resetTo,
+  };
 };
