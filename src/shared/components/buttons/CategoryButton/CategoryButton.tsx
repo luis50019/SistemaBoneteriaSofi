@@ -1,9 +1,10 @@
 import { Text, TouchableOpacity } from "react-native";
 import { stylesNewProductScreen } from "../../../../screens/NewProductScreen/NewProductScreen.style";
 import { MaterialIcons } from "@expo/vector-icons";
+type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
 
 interface CategoryButtonProps {
-  icon: string;
+  icon: MaterialIconName;
   categoryText: string;
   active: boolean;
   dashed?: boolean;

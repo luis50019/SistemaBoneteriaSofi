@@ -1,7 +1,9 @@
 import { Image, TouchableOpacity, View } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { styleImageWithCamaraButtom } from "./ImageWithCamaraButtom.style";
+import { useNavigate } from "../../../hooks/useNavigate";
 function ImageWithCamaraButtom() {
+  const { navigationToPath } = useNavigate();
   return (<View style={styleImageWithCamaraButtom.imageContainer}>
           <Image
             source={{
@@ -10,7 +12,7 @@ function ImageWithCamaraButtom() {
             style={styleImageWithCamaraButtom.image}
           />
 
-          <TouchableOpacity style={styleImageWithCamaraButtom.cameraButton}>
+          <TouchableOpacity onPress={()=>{navigationToPath('Camara')}} style={styleImageWithCamaraButtom.cameraButton}>
             <MaterialIcons name="photo-camera" size={26} color="#FFF" />
           </TouchableOpacity>
         </View>);

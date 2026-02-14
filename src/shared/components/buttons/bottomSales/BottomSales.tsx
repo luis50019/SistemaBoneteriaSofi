@@ -2,11 +2,12 @@ import { Text, TouchableOpacity, View } from "react-native";
 import { MaterialIcons  } from "@expo/vector-icons";
 import { styleBottomSales } from "./BottomSales.style";
 import { useNavigate } from "../../../hooks/useNavigate";
+type MaterialIconName = keyof typeof MaterialIcons.glyphMap;
 
 interface BottomSalesProps {
   to:string;
-  nameIcon:string;
-  iconButtom:string;
+  nameIcon:MaterialIconName;
+  iconButtom:MaterialIconName;
   title:string;
 }
 
