@@ -6,13 +6,14 @@ import SalesHistoryScreen from "../../screens/SalesScreen/SalesHistoryScreen";
 import NewProductoScreen from "../../screens/NewProductScreen/NewProductScreen";
 import QuickSaleScreen from "../../screens/QuickSaleScreen/QuickSaleScreen";
 import type { RootStackParamList } from "./types";
+import CameraScreen from "../../screens/CameraScreen/CameraScreen";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function ScreenWithLayout({ children }: { children: React.ReactNode }) {
   return <MainLayout>{children}</MainLayout>;
 }
-  
+
 function InventaryStack() {
   return (
     <Stack.Navigator
@@ -56,6 +57,7 @@ function InventaryStack() {
           </ScreenWithLayout>
         )}
       </Stack.Screen>
+      <Stack.Screen name="CameraScreen" component={CameraScreen} />
     </Stack.Navigator>
   );
 }

@@ -17,12 +17,19 @@ export const useNavigate = () => {
     navigation.push(destination);
   };
 
+  const navigateWithParams = <T extends RouteName>(
+    destination: T,
+    params: RootStackParamList[T],
+  ) => {
+    navigation.navigate(destination, params);
+  };
+
   const resetTo = (destination: RouteName) => {
     navigation.dispatch(
       CommonActions.reset({
         index: 0,
         routes: [{ name: destination }],
-      })
+      }),
     );
   };
 
@@ -30,5 +37,6 @@ export const useNavigate = () => {
     navigationTo,
     navigationToPath,
     resetTo,
+    navigateWithParams,
   };
 };

@@ -3,10 +3,7 @@ import { COLORS } from "../../core/const/color";
 export const stylesInventaryScreen = StyleSheet.create({
   container: {
     backgroundColor: COLORS.BG_PRIMARY,
-    display: "flex",
-    height: "100%",
-    flexDirection: "column",
-    justifyContent:"flex-start"
+    flex: 1,
   },
   filters: {
     paddingHorizontal: 10,
@@ -14,11 +11,11 @@ export const stylesInventaryScreen = StyleSheet.create({
     marginBottom: 16,
   },
   list: {
-    backgroundColor:'transparent',
-    paddingHorizontal:5,
-    display:"flex",
-    flexDirection:"column",
-    height:'100%',
-    paddingBottom:120,
+    backgroundColor: "transparent",
+    paddingHorizontal: 5,
+    display: "flex",
+    flexDirection: "column",
+    height: "100%",
+    paddingBottom: 120,
   },
 });

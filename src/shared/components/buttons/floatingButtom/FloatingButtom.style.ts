@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { COLORS } from "../../../../core/const/color";
 
 export const styleFloatingBottom = StyleSheet.create({
-   fab: {
+  fab: {
     position: "absolute",
     right: 24,
     bottom: 20,
@@ -14,4 +14,5 @@ export const styleFloatingBottom = StyleSheet.create({
     alignItems: "center",
     elevation: 10,
   },
-})
+});
+
