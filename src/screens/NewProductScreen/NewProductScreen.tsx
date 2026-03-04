@@ -11,6 +11,24 @@ import { useRoute } from "@react-navigation/native";
 import { useProductForm } from "../../shared/hooks/useProductForm";
 import { FormProvider } from "react-hook-form";
 
+/*
+ * TODO:
+ * name -- listo
+ * sku -- listo
+ * quantity -- listo
+ * url_product -- listo
+ * category -- listo
+ * price -- listo
+ * promotion -- listo
+ *
+ * TODO: INPUTS FALTANTES POR AGREGAR A ESTA PANTALLA
+ * gender
+ * color
+ * size
+ * min-stock
+ * active
+ * */
+
 export default function NewProductoScreen() {
   const [photo, setPhoto] = useState<string>("");
   const form = useProductForm();

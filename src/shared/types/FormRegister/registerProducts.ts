@@ -1,16 +1,6 @@
-export type registerProduct = {
-  category: string;
-  gender: string;
-  size: string;
-  promotion: TypePromotions;
-  color: "generico" | "unisex";
-  price: string;
-  cost: string;
-  min_stock: string;
-  barcode?: string;
-  description: string;
-  url_producto: string;
-};
+import { Product } from "../../../core/supabase/supabase.types";
+
+export type registerProduct = Product;
 
 export type TypePromotions = {
   name: string;
